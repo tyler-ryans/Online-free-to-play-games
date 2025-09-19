@@ -1,0 +1,17 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "addon:stone_golem",
+      "min_engine_version": "1.20.0",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/iron_golem/iron_golem"
+      },
+      "geometry": {
+        "default": "geometry.iron_golem"
+      },
+      "render_controllers": [ "controller.render.default" ]
+    }
+  }
+}
