@@ -2,7 +2,7 @@
   "format_version": "1.20.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "addon:guard_villager",
+      "identifier": "schoolpack:guard_villager",
       "min_engine_version": "1.20.0",
       "materials": { "default": "entity_alphatest" },
       "textures": {

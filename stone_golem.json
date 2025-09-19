@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "schoolpack:stone_golem",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": { "family": ["golem"] },
+      "minecraft:health": { "value": 80, "max": 80 },
+      "minecraft:movement": { "value": 0.12 },
+      "minecraft:attack": { "damage": 10 },
+      "minecraft:behavior.melee_attack": { "priority": 1, "speed_multiplier": 0.9, "reach": 2.0 },
+      "minecraft:behavior.hurt_by_target": { "priority": 2 },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "monster"
+            },
+            "max_dist": 20
+          }
+        ]
+      },
+      "minecraft:push_through": {},
+      "minecraft:collision_box": { "width": 1.4, "height": 2.7 },
+      "minecraft:nameable": {}
+    }
+  }
+}

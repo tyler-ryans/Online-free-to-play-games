@@ -2,7 +2,7 @@
   "format_version": "1.20.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "addon:stone_golem",
+      "identifier": "schoolpack:stone_golem",
       "min_engine_version": "1.20.0",
       "materials": { "default": "entity_alphatest" },
       "textures": {

@@ -1,0 +1,45 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "schoolpack:guard_villager",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": { "family": ["villager", "guard"] },
+      "minecraft:health": { "value": 40, "max": 40 },
+      "minecraft:movement": { "value": 0.25 },
+      "minecraft:attack": { "damage": 6 },
+      "minecraft:behavior.melee_attack": { "priority": 1, "speed_multiplier": 1.0, "reach": 1.5 },
+      "minecraft:behavior.hurt_by_target": { "priority": 2 },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "monster"
+            },
+            "max_dist": 16
+          }
+        ]
+      },
+      "minecraft:nameable": {},
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "event": "minecraft:send_message",
+              "target": "player",
+              "message": "Guard: Stay safe, citizen!"
+            }
+          }
+        ]
+      },
+      "minecraft:collision_box": { "width": 0.6, "height": 1.95 }
+    }
+  }
+}

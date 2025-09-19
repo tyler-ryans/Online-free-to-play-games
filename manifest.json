@@ -1,16 +1,16 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Guard & Golem BP",
-    "description": "Adds Guard Villagers and Stone Golems with natural spawns",
-    "uuid": "2c7f0a25-52b6-4d52-b4f6-68a3b6469c77",
+    "name": "Guard & Golem RP",
+    "description": "Resource pack for Guard Villagers and Stone Golems",
+    "uuid": "50a546cb-2d20-47c6-8ed9-fd44d47e0c25",
     "version": [1, 0, 0],
     "min_engine_version": [1, 20, 0]
   },
   "modules": [
     {
-      "type": "data",
-      "uuid": "a4bfbf20-0274-41aa-b015-57dc2bbf24ff",
+      "type": "resources",
+      "uuid": "8bb2d2e2-2e6e-47a6-9a94-65a4fbc6f445",
       "version": [1, 0, 0]
     }
   ]
